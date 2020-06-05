@@ -1,0 +1,14 @@
+{
+  "name":"trip logger",
+  "id":"99180358",
+  "template": "Blank",
+  "version": "0.0.0",
+  "src": "src",
+  "dist": "dist",
+  "main": "index.html",
+  "icon": "Icon.png",
+  "developer": "kelsey drivinski",
+  "category": "General",
+  "type": "Local",
+  "description": "Generated on 6/4/2020, 6:20:04 PM by ngi-sdk version "
+}
