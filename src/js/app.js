@@ -1,6 +1,6 @@
 
 
-
+//defining classes to hold the data
 class Trips {
   constructor() {
     this.trips = [];
@@ -56,7 +56,7 @@ form.addEventListener("submit", e => { // listens for submit and then calls a fu
   for (i = 0; i < buttons.length; i++) {
     if (buttons[i].checked)
       // adds the value of the true button to the trip
-      newTrip.type = buttons[i].value
+      newTrip.type = buttons[i].value;
 
   }
 
@@ -75,6 +75,7 @@ form.addEventListener("submit", e => { // listens for submit and then calls a fu
 
 
 //runs the odometer reading and stores in the trip end, calculating the length of the trip
+//currently the first trip added isn't calculating end and length?
 function updateOdometer() {
 
   gm.info.getVehicleData(displayOdometer, ['odometer']);
@@ -87,6 +88,7 @@ function updateOdometer() {
 
   console.log('trip added ', newTrip);
   // adds the trip to the trip log
+  // to be added: code to prevent addition if there's no trip length
   tripLog.add(newTrip.start, newTrip.end, newTrip.length, newTrip.type);
 
   console.log('trips in log ', tripLog.trips);

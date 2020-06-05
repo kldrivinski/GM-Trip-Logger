@@ -16,11 +16,12 @@ p {
 }
 button {
   margin: 5px;
-  width: 40%;
+  width: 300px;
   background-color: rgb(65, 51, 129);
   border-radius: 0%;
   font-weight: 800;
   color: #EEE;
+  border-style: none;
 }
 
 form {
